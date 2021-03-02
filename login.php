@@ -8,7 +8,7 @@ $password = $_POST['Password'];
         header("location:boss.html");
     } else
     {
-        header("location:dashboard.html");
+        header("location:login.html");
         echo "<p>incorrect username and password</p>";
     }
 ?>
