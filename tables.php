@@ -5,7 +5,10 @@
    user=hlmwaqxejaexwl
    password=eaa2a48bf6e6bb49dabb555d97106a0fa816acde28d1acd4e7883faeedab0ed7
     sslmode=require");
-    $query ="select * from products"
+    if ($connect === false) {
+        die("ERROR: Something went wrong with conenction!");
+    }
+    $query ="select * from products";
     $result = pg_query($connect,$query);
     ?>
 <!doctype html>
