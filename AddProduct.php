@@ -19,7 +19,7 @@
     $result = pg_query($connect, $query);
     if ($result) {
       echo "<script>alert('Record added succesfully!, Refresh');</script>";
-      header('refresh: 3; url=Add.html');
+      header('refresh: 3; url=Add.php');
     } else {
       echo ("ERROR + $query") . pg_errormessage($query);
     }
