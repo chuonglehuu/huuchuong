@@ -41,9 +41,8 @@
                                 while ($row_data = pg_fetch_assoc($result)){
                         ?>
                         <tr>
-                            <th scope="row"><?php echo $row_data["cid"];?></th>
                             <td class="table-primary" ><?php echo $row_data["product_name"];?></td>
-                            <td class="table-primary">$ <?php echo $row_data["product_type"];?></td>
+                            <td class="table-primary"> <?php echo $row_data["product_type"];?></td>
                             <td class="table-primary"><?php echo $row_data["price"];?></td>
                         </tr>
                         <?php
