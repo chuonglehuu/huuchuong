@@ -1,4 +1,13 @@
-
+<?php
+   $connect = pg_connect("host=ec2-34-192-58-41.compute-1.amazonaws.com
+   dbname=d9vnrte4pa2u89
+   port=5432
+   user=hlmwaqxejaexwl
+   password=eaa2a48bf6e6bb49dabb555d97106a0fa816acde28d1acd4e7883faeedab0ed7
+    sslmode=require");
+    $query ="select * from products"
+    $result = pg_query($connect,$query);
+    ?>
 <!doctype html>
     <html lang="en">
       <head>
