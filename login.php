@@ -5,7 +5,7 @@ $password = $_POST['Password'];
     if ($username == 'admin' && $password == '123') {
         header("location:Add.html");
     } elseif ($username == 'boss' && $password == '123') {
-        header("location:tables.html");
+        header("location:tables.php");
     } else
     {
         header("location:login.html");
